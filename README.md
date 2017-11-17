@@ -31,7 +31,7 @@ The following search order will be used, generally speaking...
 
 For web based protocols, additional/similar protocols will be searched as a fallback.
 
-* `HTTP` -> [`HTTP`. `HTTPS`]
+* `HTTP` -> [`HTTP`, `HTTPS`]
 * `HTTPS` -> [`HTTPS`, `HTTP`]
 * `WS` -> [`WS`, `WSS`, `HTTPS`, `HTTP`]
 * `WSS` -> [`WSS`, `WS`, `HTTPS`, `HTTP`]
