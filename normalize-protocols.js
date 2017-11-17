@@ -1,5 +1,5 @@
 module.exports = function normalizeProtocols(protocol) {
-  var prot = protocol.trim().toUpperCase().replace(/[\:\/]+$/, '');
+  var prot = String(protocol || 'HTTP').trim().toUpperCase().replace(/[\:\/]+$/, '');
   switch (prot) {
     case 'HTTP': return ['HTTP', 'HTTPS'];
     case 'HTTPS': return ['HTTPS', 'HTTP'];
