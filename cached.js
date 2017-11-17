@@ -12,6 +12,7 @@ module.exports = function getCachedProxy(resource) {
   }
   var ret = getProxy(resource);
   cache[origin] = ret;
+  cacheKeys.push(origin);
   while (cacheKeys.length > maxCache) {
     var key = cacheKeys.shift();
     delete cache[key];
