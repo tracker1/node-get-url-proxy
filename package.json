@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/tracker1/node-get-url-proxy#readme",
   "dependencies": {
-    "no-proxy": "^1.0.2"
+    "no-proxy": "^1.0.3"
   },
   "optionalDependencies": {
     "url-parse": "^1.2.0"
