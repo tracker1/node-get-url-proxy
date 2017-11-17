@@ -11,6 +11,9 @@ var getProxy = require('get-url-proxy');
 getProxy('http://foo.com/'); // null
 noProxy('https://www.google.com/'); // "http://proxy:8080/"
 
+// the cached wrapper will cache the last 100 resources
+var cachedProxy = require('get-url-proxy/cached');
+
 // protocol only, without NO_PROXY check
 var protocolProxy = require('get-url-proxy/protocol');
 protocolProxy('https'): // "http://proxy:8080/"
